@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.container{
+    position: relative;
+    background-color: var(--color-dark03);
+    width: 100%;
+    
+}
+.header{
+    padding:1rem;
+    background-color: var(--color-dark01);
+}
+.content{
+    width: 100%;
+    background-color: var(--color-dark02);
+    display: flex;
+}
+.boxes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.article{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-dark04);
+}
+.mini-footer{
+    padding: 3rem;
+    background-color: cyan;
+}
+.side-bar{
+    flex:1;
+    background-color: green;
+}
+.dv{
+   width: 100%;
+   padding: 2rem 0;
+   background-color: violet;
+}
+.dv:not(:first-child){
+    margin-top: 1rem;
+}
+.diva:not(:first-child){
+    margin-top: 1rem;
+}
+
+.footer{
+    padding: 3rem 4rem;
+    background-color: blue;
+}
+
+/*HEADER LOGO*/
+  .header .logo h2{
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+      font-size: 4rem;
+      font-weight: bold;
+      color: rgba(255,255,255,.1);
+      background-image: url(../img/moge.jpg);
+      background-repeat: repeat-x;
+      -webkit-background-clip: text;
+      animation: text 10s linear infinite;
+
+  }
+
+  @keyframes text {
+      0%{
+          background-position: left 0px top 80px;
+      }
+      40%{
+        background-position: left 800px top -50px;
+    }
+    80%{
+        background-position: left 1800px top -50px;
+    }
+    100%{
+        background-position: left 1800px top -50px;
+    }
+  }
+
+
+/* BOX CARD*/
+
+.bg{
+    height: 320px;
+    width: 30%;
+    position: relative;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    transition: all .5s;
+}
+.bg .circle{
+    position: relative;
+    width: 100%; 
+    height: 100%;
+    background-color: var(--color-dark03);
+    clip-path: circle(160px at center 0);
+    text-align: center;
+
+}
+.bg .circle h2{
+    color: #fff;
+    font-size: 3.6rem;
+    padding: 40px 0;
+    font-family: var(--font-02);
+    
+}
+.bg .book-text{
+    position: absolute;
+    bottom: 10px;
+    page-break-after: 20px;
+    text-align: center;
+    
+}
+.bg .book-text p{
+      color: var(--color-dark04);
+      padding: 1.8rem;
+      
+      font-size: 1.2rem;
+      font-family: var(--font-01);
+}
+
+.bg .book-text a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: var(--color-dark01);
+    border-radius: 40px;
+    text-decoration: none;
+    margin-top: 20px;
+    color: #fff;
+    font-family: var(--font-01);
+    font-weight: bold;
+}
+
+.bg:nth-child(1) .circle,
+.bg:nth-child(1) .book-text a
+{
+    background-color: #ffef00;
+}
+
+.bg:nth-child(2) .circle,
+.bg:nth-child(2) .book-text a
+{
+    background-color: blue;
+}
+
+.bg:nth-child(3) .circle,
+.bg:nth-child(3) .book-text a
+{
+    background-color:orange;
+}
+
+.bg:nth-child(4) .circle,
+.bg:nth-child(4) .book-text a
+{
+    background-color: orangered;
+}
+
+.bg:nth-child(5) .circle,
+.bg:nth-child(5) .book-text a
+{
+    background-color: crimson;
+}
+
+.bg:nth-child(6) .circle,
+.bg:nth-child(6) .book-text a
+{
+    background-color: green;
+}
+
+.boxes:hover .bg{
+    filter: blur(20px);
+    transform: scale(0.9);
+    opacity: .5;
+}
+
+.boxes .bg:hover{
+    filter: blur(0px);
+    transform: scale(1.1);
+    opacity: 1;
+}
+

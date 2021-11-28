@@ -1,0 +1,95 @@
+
+
+/*-----------MEDIA QUEERY------------*/
+/* small-x  400px === 25em*/
+
+/* 0 to 400px */
+@media only screen and (max-width:400px) {
+    .boxes{
+        width: 100% !important;
+        margin: 0 !important;
+        padding:1rem 1.7rem !important;
+        
+    }
+    .boxes .bg{
+         width: 100% !important;
+         margin: 0 !important;
+
+    }
+    .boxes .bg .book-text p{
+        padding: 0;
+    }
+}
+/* 400px to 600*/
+/* small 600px === 37.5em*/
+@media only screen and (max-width:600px) {
+    .article{
+        width: 100% !important;
+    }
+    .dv{
+        width: 100% !important;
+        
+    }
+    .boxes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0 auto;
+        padding: 2rem 4rem;
+        width: 90%;
+        background-color: red;
+    }
+    .boxes .bg{
+        width: 100% !important;
+        margin:20px 0 0 0 !important;
+        padding: 0 !important;
+    }
+}
+
+/* 600 to 900*/
+/* medium  900px === 56,25em*/
+@media only screen and (max-width:900px){
+    .container{
+        width: 100% !important;
+        margin: 0;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .article{
+        width: 100%;
+    }
+    
+    .side-bar
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .dv{
+        width: 48%;
+        margin: .4rem;
+    }
+    .boxes{
+        justify-content: center;
+        align-items: center;
+        
+        background-color: red;
+    }
+    .bg{
+        
+        width: 40% !important;
+    }
+   
+}
+/*900 to 1200*/
+/* large  1200px === 75em*/
+@media only screen and (max-width:1200px) {
+    .bg{
+        width: 45%;
+    }
+}
+
+/* largeX  1200px++ === 25em*/
+@media only screen and (min-width:25em) {
+    
+}
